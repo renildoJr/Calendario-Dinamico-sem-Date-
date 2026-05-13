@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.calendar-title {
+    text-align: center;
+    margin: 20px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.month-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.month-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.day.week {
+    font-weight: 700;
+    color: white;
+    background-color: #75a9e4;
+}
+
+.day {
+    border: 1px solid;
+    font-size: 1.5rem;
+    padding: 7px;
+    text-align: center;
+}
